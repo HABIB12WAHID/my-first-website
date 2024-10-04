@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development With Habib Wahid</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+     <h1>কিভাবে SSH Key Create করব এবং তা Setup করব</h1>
+
+    <p> <strong>SSH => Secure Shell</strong></p>
+    <p>SSH => এটি হচ্ছে একটি Communication Protocol যার মাধ্যমে একটি কম্পিউটার অন্য একটি কম্পিউটারের সাথে Securely Connection তৈরি করতে পারে। </p>
+    <p> SSH দিয়ে Clone করতে হলে প্রথমে Terminate এর Git Clone Url দিতে হবে। </p> <p>Public SSH Key Check করার জন্য এর Terminate Root Directory তে যেতে হবে। তারপর Ls -a  দিলে সকল Hidden Folder সহ দেখা যাবে । তারপর cd .ssh দিতে হবে আপনার কম্পিউটারে সে ফাইলটি আছে কিনা চেক করার জন্য। যদি থাকে তাহলে সে ফাইলে SSH Key Setup করবে। </p>
+    <h3>SSH Public Key Generate </h3>
+    <p>ssh -> ssh-keygen -o -t rsa -C github email </p>
+    <p>তারপর ssh key একটি specific location এ set করতে হবে। </p>
+
+    <script src="./index.js"></script>
+</body>
+</html>

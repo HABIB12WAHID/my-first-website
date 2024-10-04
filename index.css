@@ -1,0 +1,17 @@
+body {
+    background-color: beige;
+    margin: 0 auto;
+    padding: 5px;
+}
+h1 {
+    text-align: center;
+}
+strong {
+    margin-left: 20px;
+    font-size: 25px;
+}
+p,h3 {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 8px; 
+}
