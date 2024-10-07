@@ -180,6 +180,117 @@ console.log(phoneNo); // 17756
 // তারপর আমরা function নিয়ে আলোচনা করছি । কিভাবে function call করব সেটা দেখেছি, একই function একবার লিখে কিভাবে বার বার ব্যবহার করব সেটাও দেখেছি । 
 
 
+console.log('.................Calculate Factorial of a Number using..................')
+
+//  .....................Factorial of a number using a while loop lesson from begginers................
+
+// ..........factorial for loop..... 
+
+
+console.log("..............factorial for loop................")
+// example 01
+var factorial = 1;
+for ( var i = 1; i <= 5; i++){
+    factorial = factorial * i;
+    console.log(i, factorial);
+}
+
+
+console.log("............factorial while loop.............")
+// example 01
+
+var i = 1;
+var factorial = 1;
+while ( i <= 10 ) {
+    factorial = factorial * i;
+    i++;
+}
+console.log(factorial); // 3628800
+
+
+// function এর মাধ্যমে factorial কিভাবে নির্নয় করতে পারি সেটার উদাহরণ দেখলে কিছুটা বুঝা যাবে উদাহরণ নাম্বার ০২। 
+
+// example 02
+
+function factoriel (n){
+    var i = 1;
+    var fact = 1;
+    while ( i <= n ) {
+        fact = fact * i;
+        i++;
+    }
+    return fact;
+}
+var result = factoriel(5);
+console.log(result);
+
+
+console.log("............factorial recursive function..............")
+
+
+
+// ..................Factorial recursive function.....................
+
+// example 01
+var factorial = 1;
+for ( var i = 5; i >= 1; i--){
+    factorial = factorial * i;
+    console.log(i, factorial);
+}
+
+// .........function if else factorial.........
+
+// example 02
+function foctorial (n) { //................same function name বার বার লিখতে পারব না সেজন্য foctorial লেখা হয়েছে ।
+    if ( n == 0){  //......................যদি n সমান 0 হয় তাহলে return 1 দিবে। 
+        return 1;
+    }
+    else {
+        return n * foctorial(n-1);
+    }
+}
+var result = foctorial(10);
+console.log(result);  // 3628800 
+
+
+console.log("..............Create Fibonacci series for loop..................");
+
+
+// ..................Create Fibonacci series from begginers......................
+
+var fibo = [0, 1];
+// fibo[2] = fibo[2-1] + fibo[2-2];
+// fibo[3] = fibo[3-1] + fibo[3-2];
+// fibo[n] = fibo[n-1] + fibo[n-2];
+// fibo[i] = fibo[i-1] + fibo[i-2];
+
+for ( var i = 2; i <= 10; i++){
+    fibo[i] = fibo[i-1] + fibo[i-2];
+    console.log(fibo[i], fibo[i-1], fibo[i-2]);
+}
+// console.log(fibo);
+
+
+console.log(".............Fibonacci series recursive function..................");
+
+
+// ..........fibonacci series recursive way.............
+
+function fibonacci(n){
+    if ( n == 0){
+        return 0;
+    }
+    if ( n == 1){
+        return 1;
+    }
+    else {
+        return fibonacci(n-1) + fibonacci(n-2);
+    }
+}
+var result = fibonacci(10);
+console.log(result);
+
+
 
 
 
