@@ -2,9 +2,11 @@ console.log("Hello World");
 
 // ..................Array add and remove element from beginners...............
 
-var teaLine = ["Habib", "Wahid", "Jhonkar Mahbub", "Anisul Islam"]; //কোন একটা Array নির্ধারন করার জন্য। 
+var teaLine = ["Habib Wahid", "Jhonkar Mahbub", "Anisul Islam", "Youtube", "ChatGPT", "Google"]; //কোন একটা Array নির্ধারন করার জন্য। 
 teaLine.push("Jalal"); // .push() array টি হলো কোন একটি শব্দ পুরাতন array তে সর্বশেষে যোগ করার জন্য। 
-teaLine.pop();  // .pop() array টি হলো পুরাতন array থেকে সর্বশেষ শব্দটি ডিলেট করার জন্য। 
+teaLine.pop(); // .pop() array টি হলো পুরাতন array থেকে সর্বশেষ শব্দটি ডিলেট করার জন্য। 
+teaLine.push("[Instagram, Facebook]");
+teaLine.pop(); 
 console.log(teaLine);
 
 console.log('..............While and For loop each element.............')
@@ -25,9 +27,11 @@ while (num <= 5){
     num++;
 }
 
+console.log("................example of for loop.................");
+
 // Learning for loop
 
-for ( var i = 0; i <= 7; i++){
+for (var i = 0; i <= 7; i++){
     console.log(i);
 }
 
@@ -37,7 +41,7 @@ console.log("...............Array element for loop from begginers...............
 
 
 
-// অনেক গুলো রেজাল্ট একসাথে প্রকাশ করার জন্য  Array নির্ধারন করে একটি লুপ চালানো যাবে। 
+// অনেক গুলো রেজাল্ট একসাথে প্রকাশ করার জন্য  Array নির্ধারন করে একটি loop চালানো যাবে। 
 
 
 // example 01
@@ -45,7 +49,7 @@ var nums = [55, 66, 77, 88, 99, 11, 44];
 
 for ( var i = 0; i < nums.length; i++){ // ........(array এর মধ্যে কয়টা এলিমেন্ট আছে তা জানার জন্য আমরা .length ব্যবহার করি।)
 
-    var element = nums[i] // .................(array একটা এলিমেন্ট বের করার জন্য তার ভেরিয়েবল নাম এবং তার ইনডেক্স দিয়ে বের করব।) index i = 0;
+    var element = nums[i] // .................(array থেকে একটা এলিমেন্ট বের করার জন্য তার ভেরিয়েবল নাম এবং তার ইনডেক্স দিয়ে বের করতে হয়।) index i = 0;
 
     console.log(element); 
 }
@@ -83,7 +87,7 @@ switch (num){
 num = 1000 
 switch (num){
     case 1000:
-        console.log('i am 1000');
+        console.log('I am 1000');
         break;
     case 100:
         console.log('i am 100');
@@ -104,8 +108,9 @@ console.log("............Function, call function lesson.............");
 // ....................Function and call function from beggginers................
 
 // Function হচ্ছে এমন একটি উপায় যেটা আগে থেকে ধারনা থাকে। যদি বলা হয় কেন ধারণা থাকে তাহলে আপনার স্কুল সম্পর্কে ভাবুন একবার। 
-// ধরুন আপনি আগামীকাল স্কুলে যাবেন তাহলে আগামীকাল আপনাকে স্কুলে কয়টা ক্লাস করতে হবে কি কি ক্লাস করতে হবে সেঁটার রুটিন আছে। 
-// তেমনি আপনি একটা রুটিন করে রাখলে পরবর্তীতে ৮ টায় কি বই পড়তে হবে আপনি জানবেন। এখানে বই যেমন  একটা রেফারেন্স আপনি সহজেই বলতে পারতেছেন। তেমনি Function কাজ করে। 
+// ধরুন আপনি আগামীকাল স্কুলে যাবেন, তাহলে আগামীকাল আপনাকে স্কুলে কয়টা ক্লাস করতে হবে, কি কি ক্লাস করতে হবে সেঁটার রুটিন নিশ্চয় আপনি জানেন। 
+// যদি বলা হয় আগামীকাল ৮ টায় কি ক্লাস হবে তখন আপনি নির্দিধায় বলতে পারবেন কারণ আপনি জানেন। এখানে ক্লাস এবং সময় যেমন একটা রেফারেন্স আপনি সহজেই বলতে পারতেছেন। 
+// তেমনি Function তৈরি করে রাখলে আপনি শুধু সেই function এর নাম উল্লেখ করেই পরবর্তীতে সেটা কল করতে পারবেন। 
 
 
 // example 01 
@@ -152,42 +157,45 @@ console.log('............Object, Key Value pair, get object property and set val
 
 
 // exmaple 01
-var student = { id: 121, phone: 17756, name: "Jannatul"};
+var student1 = { id: 121, phone: 17756, name: "Jannatul"};
 var student2 = { id: 122, phone: 19456, name: "Akhi"};
-console.log(student); //.........................{ id: 121, phone: 17756, name: "Jannatul" }
+console.log(student1); //.........................{ id: 121, phone: 17756, name: "Jannatul" }
 console.log(student2); // .......................{ id: 122, phone: 19456, name: "Akhi" }
 
 // example 02
-var phoneNo = student.phone; // প্রথম স্টুডেন্ট এর ফোন নাম্বার নির্দিষ্টভাবে চেক করার জন্য এভাবে তিনটি উপায় লেখা যায়। 
-var phoneNo2 = student["phone"]; // ............উপায় নাম্বার ০২ 
-var phonePropName = "phone" // ...............উপায় নাম্বার ০৩ 
-var phoneNo3 = student[phonePropName];
+var phoneNo = student1.phone; // প্রথম স্টুডেন্ট এর ফোন নাম্বার নির্দিষ্টভাবে চেক করার জন্য এভাবে তিনটি উপায় লেখা যায়। 
+var phoneNo2 = student1["phone"]; // ............উপায় নাম্বার ০২ 
+var phonePropName = "phone" 
+var phoneNo3 = student1[phonePropName]; // ...............উপায় নাম্বার ০৩ 
 
 console.log(phoneNo); // 17756
 
-//  তুমি যখন অনেক গুলো অবজেক্ট একসাথে নিয়ে কাজ করবা তখন তুমি এইভাবে অবজেক্ট নির্ধারন করবা।  এখানে তুমি আপডেট করতে পারবা আবার নতুন প্রোপার্টি যুক্ত করতে পারো। 
+//  তুমি যখন অনেক গুলো অবজেক্ট একসাথে নিয়ে কাজ করবা তখন তুমি এইভাবে object নির্ধারন করবা। এখানে তুমি আপডেট করতে পারবা আবার নতুন property যুক্ত করতে পারবা। 
 
 //  ...................................এই পর্যন্ত আমরা অনেক কিছু শিখলাম ..................................।। 
 
 // একদম শুরুতেই আমরা শিখছি কিভাবে Variable নির্ধারন করতে পারি। কিভাবে আউটপুট দেখাইতে পারি । ভেরিয়েবল শিখার পর পরই আমরা String শিখছি । 
 
-// এরপর আমরা if....else কন্ডিশনে চলে গেলাম, আমরা যদি ফোন কিনতে চাই কি ধরনের ফোন কিনব,,অথবা ওইটা হলে ওইটা করব না হলে অন্যটা করব । 
+// এরপর আমরা if....else কন্ডিশনে চলে গেলাম, আমরা যদি ফোন কিনতে চাই কি ধরনের ফোন কিনব,,অথবা ওইটা হলে ওইটা করব না হলে অন্যটা করব এভাবে if else শিখছি। 
 
-// এরপর আমরা Array নিয়ে আলোচনা করছি । কিভাবে Array Index ধরে এটা বের করতে পারি সেটা দেখছি আবার কিভাবে পজিশনের Value সেট করতে পারি। 
+// এরপর আমরা Array নিয়ে আলোচনা করছি । কিভাবে Array Index ধরে এটা বের করতে পারি সেটা দেখছি আবার কিভাবে পজিশনের Value সেট করতে পারি সেটা দেখছি। 
 
-// তারপর আমরা Loop নিয়ে আলোচনা করছি । কোন একটা কাজ রিপিট করবা এবং সেই কাজ while Loop এবং for loop এর মাধ্যমে এক এক কিভাবে করে বাড়ানো যায় সেটাও দেখেছি। 
+// তারপর আমরা Loop নিয়ে আলোচনা করছি । কোন একটা কাজ রিপিট কিভাবে করব এবং সেই কাজ while Loop এবং for loop এর মাধ্যমে এক এক করে কিভাবে বাড়ানো যায় সেটাও দেখেছি। 
 
 // তারপর আমরা function নিয়ে আলোচনা করছি । কিভাবে function call করব সেটা দেখেছি, একই function একবার লিখে কিভাবে বার বার ব্যবহার করব সেটাও দেখেছি । 
 
 
-console.log('.................Calculate Factorial of a Number using..................')
+// ............ এখন আমরা Math এর Factorial নিয়ে আলোচনা করব .................. 
+
+
+console.log('.................Calculate Factorial of a Number using..................');
 
 //  .....................Factorial of a number using a while loop lesson from begginers................
 
 // ..........factorial for loop..... 
 
 
-console.log("..............factorial for loop................")
+console.log("..............factorial for loop................");
 // example 01
 var factorial = 1;
 for ( var i = 1; i <= 5; i++){
@@ -196,7 +204,7 @@ for ( var i = 1; i <= 5; i++){
 }
 
 
-console.log("............factorial while loop.............")
+console.log("............factorial while loop.............");
 // example 01
 
 var i = 1;
@@ -264,7 +272,7 @@ var fibo = [0, 1];
 // fibo[n] = fibo[n-1] + fibo[n-2];
 // fibo[i] = fibo[i-1] + fibo[i-2];
 
-for ( var i = 2; i <= 10; i++){
+for ( var i = 2; i <= 10; i++){        //...............মৌলিক সংখ্যা যেহেতু ২ থেকে শুরু  তাই i = 2 লেখা হয়েছে। 
     fibo[i] = fibo[i-1] + fibo[i-2];
     console.log(fibo[i], fibo[i-1], fibo[i-2]);
 }
@@ -298,7 +306,7 @@ console.log("..........javascript prime number check from begginers.............
 // ....................Javascript prime number check from begginers.....................
 
 function isPrime(n){
-    for ( i = 2; i < n; i++){
+    for (i = 2; i < n; i++){
         if(n%i == 0){
             return "not a prime number";
         }
