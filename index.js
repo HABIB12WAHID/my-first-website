@@ -61,7 +61,7 @@ console.log(".............Switch Case Break and Default lesson................."
 
 
 
-// ...................JavaScript Switch Case, Break and Default from begginers...................
+// ...................JavaScript Switch Case, Break and Default from beginners...................
 
 // switch case মূলত if else এর মতো করে কাজ করে । if else ছোট লেখার জন্য ভালো হলেও switch case বড় লেখার জন্য অনেক ভালো। 
 
@@ -105,7 +105,7 @@ console.log("............Function, call function lesson.............");
 
 
 
-// ....................Function and call function from beggginers................
+// ....................Function and call function from beginners................
 
 // Function হচ্ছে এমন একটি উপায় যেটা আগে থেকে ধারনা থাকে। যদি বলা হয় কেন ধারণা থাকে তাহলে আপনার স্কুল সম্পর্কে ভাবুন একবার। 
 // ধরুন আপনি আগামীকাল স্কুলে যাবেন, তাহলে আগামীকাল আপনাকে স্কুলে কয়টা ক্লাস করতে হবে, কি কি ক্লাস করতে হবে সেঁটার রুটিন নিশ্চয় আপনি জানেন। 

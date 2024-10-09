@@ -1,7 +1,7 @@
 
-console.log("........................Javascript Core part start for begginers level.....................");
+console.log("........................Javascript Core part start for beginners level.....................");
 
-// ........................JavaScript Core part from begginers........................
+// ........................JavaScript Core part from beginners........................
 
 // .....Swap variable without temp.....
 // ধরুন আপনার কাছে দুটি বাটি আছে । প্রথম বাটিতে জুস রাখা আর দ্বিতীয় বাটিতে পানি রাখা আছে । 
@@ -23,7 +23,7 @@ console.log("After Swap: a =", a, "b =", b);
 console.log("............Javascript random number..................");
 
 
-// .......................Javascript random number from begginers.................
+// .......................Javascript random number from beginners.................
 
 // Math.floor()......এটা নিচের নাম্বার প্রকাশ করবে। 
 // Math.ceil()....... এটা উপরের নাম্বার প্রকাশ করবে। 
@@ -52,9 +52,9 @@ console.log(".............Javascript conditional number.............");
 
 
 
-// ...................Javascript Conditional number from begginers......................
+// ...................Javascript Conditional number from beginners......................
 
-// exmaple 01
+// example 01
 
 var businessMan = 750;
 var ministerMan = 950;
@@ -83,7 +83,7 @@ else {
 console.log(".............Find the largest element of an array.................");
 
 
-// ..................Find the largest element of an array from begginers........................
+// ..................Find the largest element of an array from beginners........................
 
 
 // example 01
@@ -102,7 +102,7 @@ console.log(".............Find the largest element of an array................."
 // console.log(`Highest value is : ${max} and Total of the numbers : ${sum}`);
 
 
-// exmaple 02
+// example 02
 
 var marks = [45, 50, 71, 83, 90, 95, 98, 23, 35, 65, 100, 88, 90];
 
